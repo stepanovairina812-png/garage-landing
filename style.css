@@ -1218,13 +1218,10 @@ a {
 /* Coating textures */
 
 .swatch-domino {
-  background-color: #d8d8d8;
-  background-image:
-    radial-gradient(circle, #111 0 2px, transparent 2.5px),
-    radial-gradient(circle, #777 0 1.5px, transparent 2px),
-    radial-gradient(circle, #f4f4f4 0 2px, transparent 2.5px);
-  background-position: 0 0, 8px 11px, 15px 5px;
-  background-size: 18px 18px, 23px 23px, 29px 29px;
+    background-image: url("./images/colors/domino.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .swatch-nightfall {
@@ -1275,6 +1272,40 @@ a {
     radial-gradient(circle, #111111 0 2px, transparent 2.5px);
   background-position: 0 0, 9px 11px, 16px 5px;
   background-size: 19px 19px, 25px 25px, 31px 31px;
+}
+.swatch-nightfall {
+    background-image: url("./images/colors/nightfall.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.swatch-granite {
+    background-image: url("./images/colors/granite.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.swatch-saddle {
+    background-image: url("./images/colors/saddle-tan.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.swatch-smoke {
+    background-image: url("./images/colors/smoke.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.swatch-orbit {
+    background-image: url("./images/colors/orbit.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 @media (max-width: 900px) {
