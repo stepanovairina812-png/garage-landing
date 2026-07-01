@@ -1104,3 +1104,196 @@ a {
     font-size: 16px;
   }
 }
+/* Built Better section */
+
+.features-section {
+  padding: 80px 0;
+  background: #f4f4f4;
+  color: #111;
+}
+
+.features-section .section-heading {
+  margin-bottom: 44px;
+  text-align: center;
+}
+
+.features-section .section-heading p {
+  color: #ff5a00;
+}
+
+.features-section .section-heading h2 {
+  color: #111;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 28px;
+}
+
+.feature-card {
+  text-align: center;
+}
+
+.feature-icon {
+  margin-bottom: 15px;
+  color: #ff5a00;
+  font-size: 42px;
+  line-height: 1;
+}
+
+.feature-card h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+.feature-card p {
+  margin: 0;
+  color: #555;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .features-section {
+    padding: 60px 0;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+}
+/* Popular coating colors */
+
+.colors-section {
+  padding: 80px 0;
+  background: #ffffff;
+  color: #111111;
+  border-top: 1px solid #dddddd;
+}
+
+.colors-section .section-heading {
+  margin-bottom: 42px;
+  text-align: center;
+}
+
+.colors-section .section-heading p {
+  color: #ff5a00;
+}
+
+.colors-section .section-heading h2 {
+  color: #111111;
+}
+
+.colors-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+}
+
+.color-card {
+  text-align: center;
+}
+
+.color-swatch {
+  height: 115px;
+  margin-bottom: 14px;
+  border: 1px solid #cccccc;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.color-card h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+/* Coating textures */
+
+.swatch-domino {
+  background-color: #d8d8d8;
+  background-image:
+    radial-gradient(circle, #111 0 2px, transparent 2.5px),
+    radial-gradient(circle, #777 0 1.5px, transparent 2px),
+    radial-gradient(circle, #f4f4f4 0 2px, transparent 2.5px);
+  background-position: 0 0, 8px 11px, 15px 5px;
+  background-size: 18px 18px, 23px 23px, 29px 29px;
+}
+
+.swatch-nightfall {
+  background-color: #171717;
+  background-image:
+    radial-gradient(circle, #eeeeee 0 2px, transparent 2.5px),
+    radial-gradient(circle, #777777 0 1.5px, transparent 2px),
+    radial-gradient(circle, #333333 0 2px, transparent 2.5px);
+  background-position: 0 0, 9px 12px, 16px 5px;
+  background-size: 19px 19px, 25px 25px, 31px 31px;
+}
+
+.swatch-granite {
+  background-color: #bdbdbd;
+  background-image:
+    radial-gradient(circle, #444444 0 2px, transparent 2.5px),
+    radial-gradient(circle, #eeeeee 0 1.5px, transparent 2px),
+    radial-gradient(circle, #888888 0 2px, transparent 2.5px);
+  background-position: 0 0, 8px 10px, 15px 4px;
+  background-size: 18px 18px, 24px 24px, 30px 30px;
+}
+
+.swatch-saddle {
+  background-color: #b98d62;
+  background-image:
+    radial-gradient(circle, #704525 0 2px, transparent 2.5px),
+    radial-gradient(circle, #ead0ae 0 1.5px, transparent 2px),
+    radial-gradient(circle, #93613b 0 2px, transparent 2.5px);
+  background-position: 0 0, 9px 11px, 16px 5px;
+  background-size: 19px 19px, 25px 25px, 31px 31px;
+}
+
+.swatch-smoke {
+  background-color: #7c7c7c;
+  background-image:
+    radial-gradient(circle, #222222 0 2px, transparent 2.5px),
+    radial-gradient(circle, #cccccc 0 1.5px, transparent 2px),
+    radial-gradient(circle, #555555 0 2px, transparent 2.5px);
+  background-position: 0 0, 8px 10px, 15px 5px;
+  background-size: 18px 18px, 24px 24px, 30px 30px;
+}
+
+.swatch-orbit {
+  background-color: #687278;
+  background-image:
+    radial-gradient(circle, #eeeeee 0 2px, transparent 2.5px),
+    radial-gradient(circle, #173f59 0 1.5px, transparent 2px),
+    radial-gradient(circle, #111111 0 2px, transparent 2.5px);
+  background-position: 0 0, 9px 11px, 16px 5px;
+  background-size: 19px 19px, 25px 25px, 31px 31px;
+}
+
+@media (max-width: 900px) {
+  .colors-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .colors-section {
+    padding: 60px 0;
+  }
+
+  .colors-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px 14px;
+  }
+
+  .color-swatch {
+    height: 100px;
+  }
+}
