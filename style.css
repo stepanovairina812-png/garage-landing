@@ -1307,7 +1307,92 @@ a {
     background-position: center;
     background-repeat: no-repeat;
 }
+/* Simple Process */
+.process-section {
+    padding: 90px 0;
+    background: #f5f5f5;
+    color: #111111;
+}
 
+.process-section .section-heading {
+    max-width: 760px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.process-section .section-heading p {
+    margin: 0 0 12px;
+    color: #ff5a00;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.process-section .section-heading h2 {
+    margin: 0;
+    color: #111111;
+    font-size: clamp(34px, 5vw, 58px);
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.process-card {
+    min-height: 285px;
+    padding: 30px;
+    background: #ffffff;
+    border-top: 4px solid #ff5a00;
+    border-radius: 12px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+}
+
+.process-number {
+    display: block;
+    margin-bottom: 38px;
+    color: #ff5a00;
+    font-size: 42px;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.process-card h3 {
+    margin: 0 0 16px;
+    color: #111111;
+    font-size: 22px;
+}
+
+.process-card p {
+    margin: 0;
+    color: #555555;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+    .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .process-section {
+        padding: 65px 0;
+    }
+
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .process-card {
+        min-height: auto;
+    }
+}
 @media (max-width: 900px) {
   .colors-grid {
     grid-template-columns: repeat(3, 1fr);
