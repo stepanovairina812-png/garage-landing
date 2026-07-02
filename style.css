@@ -2629,3 +2629,264 @@ a {
     padding-top: 56px;
   }
 }
+/* FINAL FOOTER */
+
+.site-footer {
+  clear: both;
+  padding: 58px 0 0;
+  background:
+    radial-gradient(
+      circle at 88% 30%,
+      rgba(255, 106, 0, 0.12),
+      transparent 28%
+    ),
+    linear-gradient(145deg, #0d0f10, #181b1e);
+  color: #ffffff;
+}
+
+.footer-main {
+  display: grid;
+  grid-template-columns: 1.6fr 0.8fr 1fr 0.9fr;
+  align-items: start;
+  gap: 52px;
+  padding-bottom: 46px;
+}
+
+.footer-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-logo-mark {
+  width: 58px;
+  height: 58px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #ff6a00;
+  clip-path: polygon(
+    50% 0,
+    92% 15%,
+    92% 70%,
+    50% 100%,
+    8% 70%,
+    8% 15%
+  );
+  color: #ff6a00;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.footer-logo strong {
+  display: block;
+  font-size: 19px;
+  line-height: 1.15;
+  text-transform: uppercase;
+}
+
+.footer-logo small {
+  display: block;
+  margin-top: 5px;
+  color: #ff6a00;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+}
+
+.footer-brand p {
+  max-width: 340px;
+  margin: 20px 0 0;
+  color: #aeb1b4;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.footer-column h3 {
+  margin: 0 0 8px;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.footer-column a,
+.footer-column span {
+  color: #b9bbbe;
+  font-size: 14px;
+  line-height: 1.45;
+  text-decoration: none;
+}
+
+.footer-column a:hover {
+  color: #ff6a00;
+}
+
+.footer-rating {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 22px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 16px;
+  background: rgba(0, 0, 0, 0.22);
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+}
+
+.footer-rating span {
+  color: #ff6a00;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.footer-rating strong {
+  margin-top: 8px;
+  color: #ffb000;
+  font-size: 17px;
+}
+
+.footer-rating small {
+  margin-top: 7px;
+  color: #bcbec0;
+  font-size: 12px;
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: #909396;
+  font-size: 12px;
+}
+
+.footer-bottom div {
+  display: flex;
+  gap: 22px;
+}
+
+.footer-bottom a {
+  color: #909396;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  color: #ff6a00;
+}
+
+.site-footer .demo-note {
+  margin: 0;
+  padding: 11px 20px;
+  background: #090a0b;
+  color: #777a7d;
+  font-size: 11px;
+  text-align: center;
+}
+
+@media (max-width: 950px) {
+  .footer-main {
+    grid-template-columns: 1.4fr 1fr 1fr;
+  }
+
+  .footer-rating {
+    grid-column: 1 / -1;
+    max-width: 330px;
+  }
+}
+
+@media (max-width: 650px) {
+  .site-footer {
+    padding-top: 46px;
+  }
+
+  .footer-main {
+    grid-template-columns: 1fr;
+    gap: 34px;
+    text-align: center;
+  }
+
+  .footer-logo {
+    justify-content: center;
+  }
+
+  .footer-brand p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer-rating {
+    width: 100%;
+    max-width: none;
+    box-sizing: border-box;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+/* Fix footer logo shield */
+
+.footer-logo-mark {
+  position: relative;
+  width: 58px;
+  height: 64px;
+  flex: 0 0 auto;
+  border: 0;
+  background: transparent;
+  clip-path: none;
+  font-size: 0;
+}
+
+.footer-logo-mark::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #ff6a00;
+  clip-path: polygon(
+    50% 0,
+    92% 14%,
+    92% 70%,
+    50% 100%,
+    8% 70%,
+    8% 14%
+  );
+}
+
+.footer-logo-mark::after {
+  content: "AGF";
+  position: absolute;
+  inset: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #111315;
+  color: #ff6a00;
+  font-size: 15px;
+  font-weight: 900;
+  clip-path: polygon(
+    50% 0,
+    92% 14%,
+    92% 70%,
+    50% 100%,
+    8% 70%,
+    8% 14%
+  );
+}
