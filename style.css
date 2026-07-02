@@ -2236,3 +2236,96 @@ a {
     white-space: nowrap;
   }
 }
+/* Fix warranty badge on desktop and mobile */
+.warranty-badge {
+  position: relative;
+  width: 180px;
+  height: 210px;
+  margin: 0 auto;
+  padding: 0;
+  background: transparent;
+  clip-path: none;
+  flex-shrink: 0;
+}
+
+.warranty-badge::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #ff6a00;
+  clip-path: polygon(
+    50% 0,
+    90% 12%,
+    90% 70%,
+    50% 100%,
+    10% 70%,
+    10% 12%
+  );
+}
+
+.warranty-badge-inner {
+  position: absolute;
+  inset: 6px;
+  width: auto;
+  height: auto;
+  z-index: 1;
+  background: #17191b;
+  clip-path: polygon(
+    50% 0,
+    90% 12%,
+    90% 70%,
+    50% 100%,
+    10% 70%,
+    10% 12%
+  );
+}
+
+.warranty-badge strong {
+  font-size: 64px;
+  line-height: 0.85;
+}
+
+.warranty-badge span {
+  margin-top: 10px;
+  font-size: 18px;
+  letter-spacing: 4px;
+}
+
+.warranty-badge b {
+  box-sizing: border-box;
+  width: 116px;
+  margin-top: 14px;
+  padding: 7px 3px;
+  background: #ff6a00;
+  color: #ffffff;
+  font-size: 10px;
+  letter-spacing: 0.4px;
+  white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  .warranty-badge {
+    width: 160px;
+    height: 188px;
+  }
+
+  .warranty-badge-inner {
+    inset: 5px;
+  }
+
+  .warranty-badge strong {
+    font-size: 58px;
+  }
+
+  .warranty-badge b {
+    width: 106px;
+  }
+}
+.warranty-badge {
+  border: none !important;
+  border-left: none !important;
+  border-radius: 0 !important;
+  outline: none !important;
+  box-shadow: none !important;
+  overflow: visible;
+}
