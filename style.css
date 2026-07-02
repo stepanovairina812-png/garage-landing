@@ -1854,3 +1854,26 @@ a {
     padding: 22px;
   }
 }
+/* Review avatars */
+.review-author {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.review-avatar {
+  width: 58px;
+  height: 58px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.review-author h3 {
+  margin: 0 0 4px;
+}
+
+.review-author span {
+  display: block;
+}
